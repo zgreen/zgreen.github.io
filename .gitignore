@@ -15,6 +15,5 @@ npm-debug.log
 
 .sass-cache
 
-css/build/*
 node_modules/*
 _site/*

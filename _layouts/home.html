@@ -1,0 +1,143 @@
+{% include head.html %}
+<body class="home">
+  <div id="wrap-steps" class="wrap">
+    <header id="step-1" class="step">
+      <h1>Hello. My name is Zach Green.</h1>
+      <p>This website relates to my work as a web developer &amp; designer.</p>
+      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="26.2" height="26.2" viewBox="0 0 26.2 26.2" enable-background="new 0 0 26.227 26.226" xml:space="preserve"><path d="M0 13.1c0 7.2 5.9 13.1 13.1 13.1 7.2 0 13.1-5.9 13.1-13.1C26.2 5.9 20.4 0 13.1 0 5.9 0 0 5.9 0 13.1zM25.2 13.1c0 6.7-5.4 12.1-12.1 12.1 -6.7 0-12.1-5.4-12.1-12.1 0-6.7 5.4-12.1 12.1-12.1S25.2 6.5 25.2 13.1zM7.5 13.9l-0.7 0.7 6.4 6.4 6.4-6.4 -0.7-0.7 -5.1 5.1V6.3h-1v12.7L7.5 13.9z"/></svg></div>
+    </header>
+    <div id="step-2" class="step interest">
+      <h2>Blog</h2>
+      {% for post in site.posts limit:1 %}
+      <a class="post-blog" href="{{ post.url | remove_first:'/'}}">
+        <h3>{{ post.title }}</h2>
+        {{ post.excerpt }}
+      </a>
+      {% endfor %}
+      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="26.2" height="26.2" viewBox="0 0 26.2 26.2" enable-background="new 0 0 26.227 26.226" xml:space="preserve"><path d="M0 13.1c0 7.2 5.9 13.1 13.1 13.1 7.2 0 13.1-5.9 13.1-13.1C26.2 5.9 20.4 0 13.1 0 5.9 0 0 5.9 0 13.1zM25.2 13.1c0 6.7-5.4 12.1-12.1 12.1 -6.7 0-12.1-5.4-12.1-12.1 0-6.7 5.4-12.1 12.1-12.1S25.2 6.5 25.2 13.1zM7.5 13.9l-0.7 0.7 6.4 6.4 6.4-6.4 -0.7-0.7 -5.1 5.1V6.3h-1v12.7L7.5 13.9z"/></svg></div>
+    </div>
+    <div id="step-3" class="step">
+      <h3>Current position</h3>
+      <div class="about">
+        <p>I'm currently employed as a front-end developer at <a href="http://web.mit.edu">MIT</a>, working in the libraries.</p>
+        <svg class="mit-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="499.768px" height="259.139px" viewBox="0 0 499.768 259.139" enable-background="new 0 0 499.768 259.139" xml:space="preserve"><rect class="line-1" width="55.5" height="259.1"></rect><rect class="line-2" x="92.5" width="55.5" height="178.5"></rect> <rect class="line-3" x="185.1" width="55.5" height="259.1"></rect><rect class="line-4" x="277.6" y="92.5" width="55.5" height="166.6"></rect><rect class="line-5" x="370.2" y="0" width="129.6" height="55.5"></rect><rect class="line-6" class="line-x" x="370.2" y="92.5" width="55.5" height="166.6"></rect><rect class="line-7" x="277.6" width="55.5" height="55.5"></rect>
+        </svg>
+        <p class="responsibility">I'm primarily responsible for the MIT Libraries' website, <a href="http://libraries.mit.edu">libraries.mit.edu</a>.</p>
+      </div>
+      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="26.2" height="26.2" viewBox="0 0 26.2 26.2" enable-background="new 0 0 26.227 26.226" xml:space="preserve"><path d="M0 13.1c0 7.2 5.9 13.1 13.1 13.1 7.2 0 13.1-5.9 13.1-13.1C26.2 5.9 20.4 0 13.1 0 5.9 0 0 5.9 0 13.1zM25.2 13.1c0 6.7-5.4 12.1-12.1 12.1 -6.7 0-12.1-5.4-12.1-12.1 0-6.7 5.4-12.1 12.1-12.1S25.2 6.5 25.2 13.1zM7.5 13.9l-0.7 0.7 6.4 6.4 6.4-6.4 -0.7-0.7 -5.1 5.1V6.3h-1v12.7L7.5 13.9z"/></svg></div>
+    </div>
+    <div id="step-4" class="step">
+      <h3>About the job</h3>
+      <p><a href="http://libraries.mit.edu">libraries.mit.edu</a> runs on Wordpress (using Multisite). Most of my days are spent doing development and maintenance on this site.</p>
+      <p>Version 2 of the site, which I developed, was just recently launched.</p>
+      <p>You can view the github repo for the site <a href="https://github.com/zgreen/MITlibraries-parent">here</a>.</p>
+      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="26.2" height="26.2" viewBox="0 0 26.2 26.2" enable-background="new 0 0 26.227 26.226" xml:space="preserve"><path d="M0 13.1c0 7.2 5.9 13.1 13.1 13.1 7.2 0 13.1-5.9 13.1-13.1C26.2 5.9 20.4 0 13.1 0 5.9 0 0 5.9 0 13.1zM25.2 13.1c0 6.7-5.4 12.1-12.1 12.1 -6.7 0-12.1-5.4-12.1-12.1 0-6.7 5.4-12.1 12.1-12.1S25.2 6.5 25.2 13.1zM7.5 13.9l-0.7 0.7 6.4 6.4 6.4-6.4 -0.7-0.7 -5.1 5.1V6.3h-1v12.7L7.5 13.9z"/></svg></div>
+    </div>
+    <div id="step-5" class="step past-work">
+      <h3>Past Work</h3>
+      <div class="wrap-portfolio">
+        <div id="portfolio-first" class="pane">
+          <p>Prior to beginning my job at MIT, I did web design and development for a pair of companies.</p>
+          <p>One, <em>Chocolog Media</em>, was founded by my wife and I.</p>
+          <p>The other, <a href="http://sacflydesign.com">SacFly</a>, I founded myself, shortly before I was hired by MIT.</p>
+        </div>
+        <div id="portfolio-second" class="pane hidden">
+          <div id="portfolio" class="portfolio">
+            <div id="wrap-slides" class="wrap-slides">
+              <div class="slide active">
+                <h5><a href="http://newssnafus.com/">NewsSnafus</a></h5>
+                <p>I built NewsSnafus for a former AP Reporter who was looking to write about mistakes made by the news media. Though site never got off the ground, I remain pleased with the design.</p>
+                <p>Built with Drupal, responsive at one breakpoint.</p>
+                <p>Made in 2013. Designed &amp; developed.</p>
+              </div>
+              <div class="slide">
+                <h5><a href="http://harvardreview.fas.harvard.edu/">Harvard Review Online</a></h5>
+                <p><em>Harvard Review</em> is an internationally recognized literary journal.</p>
+                <p>Built with Drupal.</p>
+                <p>Made in 2013. Developed.</p>
+              </div>
+              <div class="slide">
+                <h5><a href="http://oliviasauerwein.com/">OliviaSauerwein.com</a></h5>
+                <p>Olivia Sauerwein is an artist, set designer, and photographer.</p>
+                <p>Built with Drupal; (just about) fully responsive.</p>
+                <p>Made in 2012. Designed &amp; developed.</p>
+              </div>
+              <div class="slide">
+                <h5><a href="http://judithgengler.com/">JudithGengler.com</a></h5>
+                <p>Judith Gengler hired me to build a portfolio site for her photography work.</p>
+                <p>Built with Drupal; responsive to tablet width.</p>
+                <p>Made in 2012. Designed &amp; developed.</p>
+              </div>
+              <div class="slide">
+                <h5><a href="http://prairieschooner.unl.edu/">Prairie Schooner</a></h5>
+                <p>Like <em>Harvard Review</em>, <em>Prairie Schooner</em> is an internationally recognized literary journal.</p>
+                <p>Built with Drupal.</p>
+                <p>Made in 2011, updated through 2013 (design choices made since then are not my own). Designed &amp; developed.</p>
+              </div>
+              <div class="slide-controls">
+                <a href="#0" class="prev slide-control">&larr; Previous</a>
+                <a href="#0" class="next slide-control">Next &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="view-portfolio" class="toggle-view-portfolio">View Portfolio</div>
+      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="26.2" height="26.2" viewBox="0 0 26.2 26.2" enable-background="new 0 0 26.227 26.226" xml:space="preserve"><path d="M0 13.1c0 7.2 5.9 13.1 13.1 13.1 7.2 0 13.1-5.9 13.1-13.1C26.2 5.9 20.4 0 13.1 0 5.9 0 0 5.9 0 13.1zM25.2 13.1c0 6.7-5.4 12.1-12.1 12.1 -6.7 0-12.1-5.4-12.1-12.1 0-6.7 5.4-12.1 12.1-12.1S25.2 6.5 25.2 13.1zM7.5 13.9l-0.7 0.7 6.4 6.4 6.4-6.4 -0.7-0.7 -5.1 5.1V6.3h-1v12.7L7.5 13.9z"/></svg></div>
+    </div>
+    <div id="step-6" class="skills step">
+      <h3>Skill Set</h3>
+      <ul>
+        <li>HTML, CSS, Sass</li>
+        <li>jQuery, JSON, PHP</li>
+        <li>Drupal, Wordpress, Jekyll</li>
+        <li>Git, Grunt.js</li>
+        <li>Adobe Illustrator, Photoshop, InDesign</li>
+      </ul>
+      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="26.2" height="26.2" viewBox="0 0 26.2 26.2" enable-background="new 0 0 26.227 26.226" xml:space="preserve"><path d="M0 13.1c0 7.2 5.9 13.1 13.1 13.1 7.2 0 13.1-5.9 13.1-13.1C26.2 5.9 20.4 0 13.1 0 5.9 0 0 5.9 0 13.1zM25.2 13.1c0 6.7-5.4 12.1-12.1 12.1 -6.7 0-12.1-5.4-12.1-12.1 0-6.7 5.4-12.1 12.1-12.1S25.2 6.5 25.2 13.1zM7.5 13.9l-0.7 0.7 6.4 6.4 6.4-6.4 -0.7-0.7 -5.1 5.1V6.3h-1v12.7L7.5 13.9z"/></svg></div>
+    </div>
+    <div id="step-7" class="step contact">
+      <h3>Contact</h3>
+      <a href="mailto:zhgreen@gmail.com">zhgreen@gmail.com</a>
+      <a href="http://zgreen.github.io">zgreen.github.io</a>
+      <a href="https://github.com/zgreen">github.com/zgreen</a>
+      <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="26.2" height="26.2" viewBox="0 0 26.2 26.2" enable-background="new 0 0 26.227 26.226" xml:space="preserve"><path d="M0 13.1c0 7.2 5.9 13.1 13.1 13.1 7.2 0 13.1-5.9 13.1-13.1C26.2 5.9 20.4 0 13.1 0 5.9 0 0 5.9 0 13.1zM25.2 13.1c0 6.7-5.4 12.1-12.1 12.1 -6.7 0-12.1-5.4-12.1-12.1 0-6.7 5.4-12.1 12.1-12.1S25.2 6.5 25.2 13.1zM7.5 13.9l-0.7 0.7 6.4 6.4 6.4-6.4 -0.7-0.7 -5.1 5.1V6.3h-1v12.7L7.5 13.9z"/></svg></div>
+    </div>
+    <footer id="step-8" class="footer step">
+      <h3>About this site</h3>
+      <p>All code (HTML/CSS/jQuery) was written by me; no plugins were used.</p>
+      <p>Full page background transitions and portfolio slide changes are handled with CSS. The smooth scroll is just an animation of jQuery's <code>scrollTop()</code> function.</p>
+      <h4><a id="license-info" href="#license-text" class="license-info">License Info</a></h4>
+      <div id="license-text" class="license-text">
+        <p>The MIT License (MIT)</p>
+        <p>Copyright (c) 2014 Zach Green</p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+        <p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+        <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+      </div>
+    </footer>
+    <div id="reset">Reset</div>
+    <nav class="nav-main">
+      <a href="#blog" data-step="step-2">blog</a>
+      <a href="#current" data-step="step-3">current</a>
+      <a href="#portfolio" data-step="step-5">porfolio</a>
+      <a href="#skills" data-step="step-6">skills</a>
+      <a href="#contact" data-step="step-7">contact</a>
+    </nav>
+  </div><!-- end div.wrap -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/build/production.min.js"></script>
+</body>
+</html>

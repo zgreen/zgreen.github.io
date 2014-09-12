@@ -46,6 +46,9 @@ html.step-8 {
 html.step-8 body {
   color: #fff;
 }
+html.step-8 .interest a {
+  color: #fff;
+}
 
 body {
   color: #111;

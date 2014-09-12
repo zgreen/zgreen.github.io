@@ -101,14 +101,15 @@ $(function(){
 		$(document).on('click', '#license-info', function(){
 			$('#license-text').addClass('active');
 		});
-
+		// Nav control/transitions
 		$('nav').on('click', 'a', function(){
 			var step = $(this).data('step');
 			var domStep = $('div#'+step);
 			var numSteps = $('.step').length;
-			for (var i = 1; i < numSteps; i++) {
-				$('html').removeClass('step-'+[i]);
-			}
+			$('html').removeClass();
+			//for (var i = 1; i < numSteps; i++) {
+				//$('html').removeClass('step-'+[i]);
+			//}
 
 			$('html').addClass(step);
 			$('body,html').animate({

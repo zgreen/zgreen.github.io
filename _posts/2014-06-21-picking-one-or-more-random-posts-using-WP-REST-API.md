@@ -2,6 +2,7 @@
 layout: post
 title:  "Some Notes on Picking One or Two Random Posts Using WP REST API"
 date:   2014-06-21
+category: blog
 excerpt: You can use the WP REST API to GET posts with Ajax.
 ---
 

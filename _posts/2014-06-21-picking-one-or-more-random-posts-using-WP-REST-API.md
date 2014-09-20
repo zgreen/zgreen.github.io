@@ -56,7 +56,7 @@ $.getJSON('/wp-json/posts')
 {% endhighlight %}
 One problem with this approach: if you only have a very small number of posts—two or three—the `while` loop could run for a long time before it succeeds in finding a `randomPost2` that doesn't equal `randomPost1`. And, if you have only one post, that while loop will run forever.
 
-A smarter approach would is to use a shuffle function, [like this](http://bost.ocks.org/mike/shuffle/).
+A smarter approach is to use a shuffle function, [like this](http://bost.ocks.org/mike/shuffle/).
 
 It's also worth noting that, by default, Wordpress sets a number of posts per page, and this goes for the JSON, too. To return all your posts, set this in your functions.php, plugin.php, etc.:
 {% highlight php %}

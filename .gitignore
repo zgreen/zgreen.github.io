@@ -1,19 +1,6 @@
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 
-pids
-logs
-results
-
+build
+node_modules
 npm-debug.log
-
-.sass-cache
-
-node_modules/*
-_site/*

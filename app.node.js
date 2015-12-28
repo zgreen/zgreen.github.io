@@ -700,6 +700,17 @@ module.exports =
             "."
           ),
           _react2["default"].createElement(
+            "p",
+            null,
+            "I blog occasionally on ",
+            _react2["default"].createElement(
+              "a",
+              { href: "//codepen.io/zgreen/posts/published/" },
+              "CodePen"
+            ),
+            "."
+          ),
+          _react2["default"].createElement(
             "h2",
             null,
             "Contact"

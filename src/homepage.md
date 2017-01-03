@@ -1,0 +1,1 @@
+Hi. I'm a web developer and a writer. I currently work at [Alley Interactive](https://www.alleyinteractive.com/); I used to work at [MIT](http://libraries.mit.edu/). You can find me on [GitHub](https://github.com/zgreen/) and [Twitter](https://twitter.com/zgreen_), or you can email me at <zhgreen@gmail.com>. Thanks for stopping by.

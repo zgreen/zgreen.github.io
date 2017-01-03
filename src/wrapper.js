@@ -12,7 +12,7 @@ export default function ({ html }) {
       if ((window.location.host === 'localhost:8080' && -1 !== window.location.search.indexOf('renderCritical')) || window.location.host !== 'localhost:8080') {
         var style = document.createElement('style')
         style.innerHTML = '${criticalStyles}'
-        document.getElementsByTagName('head')[0].append(style)
+        document.getElementsByTagName('head')[0].appendChild(style)
       }
     }())
   </script>

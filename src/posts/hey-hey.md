@@ -1,4 +1,4 @@
-# Hey hey
+# Hey hey!
 <time>1/4/2017</time>
 
 ![Krusty The Clown](/src/posts/img/Krustytheclown.png)

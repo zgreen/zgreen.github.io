@@ -42,6 +42,19 @@ article img {
   }
 }
 
+.homePostTitle {
+  text-decoration: none;
+  @media (max-width: 700px) {
+    display: block;
+  }
+}
+
+.homePostTitleWrapper {
+  @media (max-width: 700px) {
+    text-align: center;
+  }
+}
+
 .wrapper {
   border: 10px solid gold;
   color: #111;

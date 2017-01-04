@@ -4,7 +4,6 @@ import eraserHead from './img/eraserHead.jpeg'
 import config from './config'
 import posts from './posts.json'
 import { Link } from 'react-router'
-console.log(posts)
 const homepage = { __html: require('./homepage.md') }
 
 if (!IS_PRODUCTION) { // eslint-disable-line no-undef
@@ -26,9 +25,9 @@ class Main extends React.Component {
           <div><img src={eraserHead} alt='Eraserhead' /></div>
           <div dangerouslySetInnerHTML={homepage} />
         </div>
-        <h2><span style={{ fontWeight: '400' }}>Latest post</span>: <Link
+        <h2 className={styles.homePostTitleWrapper}><span style={{ fontWeight: '400' }}>Latest post</span>: <Link
           to={latestPostObj.slug}
-          style={{ textDecoration: 'none' }}
+          className={styles.homePostTitle}
           >"{latestPostObj.title}"</Link>
         </h2>
       </div>

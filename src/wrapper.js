@@ -1,4 +1,5 @@
 import criticalStyles from '!raw!../critical.css'
+import config from './config'
 
 export default function ({ html }) {
   return `<!DOCTYPE html>
@@ -6,7 +7,7 @@ export default function ({ html }) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Zach Green</title>
+  <title>${config.siteName}</title>
   <script>
     (function() {
       if ((window.location.host === 'localhost:8080' && -1 !== window.location.search.indexOf('renderCritical')) || window.location.host !== 'localhost:8080') {

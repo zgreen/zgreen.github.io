@@ -9,7 +9,10 @@ const postcssImport = require('postcss-import');
 const postcssNested = require('postcss-nested');
 const isHot = process.argv.indexOf('--hot') !== -1;
 const isProduction = process.argv.indexOf('-p') !== -1;
-const paths = ['/'].concat(require('./src/posts.json'))
+const paths = ['/']
+  .concat(require('./src/posts.json')
+    .filter((post) => !post.isDraft)
+    .map((post) => post.slug))
 const plugins = [
   new webpack.DefinePlugin({
     IS_PRODUCTION: isProduction
@@ -34,7 +37,6 @@ if (isProduction) {
 module.exports = {
   entry: {
     app: 'src/app.jsx',
-    //css: 'src/core.css' // @TODO It would be nice not to have to do this.
   },
   output: {
     path: '',
@@ -77,7 +79,7 @@ module.exports = {
         loader: 'dom!html',
       },
       {
-        test: /\.jpe?g$/,
+        test: /\.jpe?g$|\.png$/,
         loader: 'file'
       },
 			{

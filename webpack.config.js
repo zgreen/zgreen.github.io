@@ -9,7 +9,7 @@ const postcssImport = require('postcss-import');
 const postcssNested = require('postcss-nested');
 const isHot = process.argv.indexOf('--hot') !== -1;
 const isProduction = process.argv.indexOf('-p') !== -1;
-const paths = ['/']
+const paths = ['/'].concat(require('./src/posts.json'))
 const plugins = [
   new webpack.DefinePlugin({
     IS_PRODUCTION: isProduction

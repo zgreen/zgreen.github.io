@@ -10,6 +10,13 @@ a {
   color: #85144b;
 }
 
+article img {
+  display: block;
+  margin: 0 auto;
+  max-height: 33vh;
+  max-width: 100%;
+}
+
 .bioWrap {
   display: flex;
   @media (max-width: 700px) {
@@ -50,10 +57,10 @@ a {
 }
 
 .wrapperInner {
-  margin: 4em auto 0;
+  margin: 4em auto;
   max-width: 33em;
   padding: 0 2em;
   @media (max-width: 700px) {
-    margin-top: 2em;
+    margin: 2em auto;
   }
 }
